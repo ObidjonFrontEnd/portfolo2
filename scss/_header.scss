@@ -1,0 +1,72 @@
+header{
+    
+    .nav-bar{
+        width: 100%;
+        position: fixed;
+        background-color: $bg;
+        top: 0;
+        z-index: 99;
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .bi-list{
+                font-size: 25px;
+                color: $white;
+                display: none;
+            }
+            .logo{
+                display: flex;
+                color: $white;   
+                align-items: center;
+            }
+            ul{
+                display: flex;
+                gap: 30px;
+                li{
+                    a{
+                        color: $white;
+                        &:hover{
+                            @include gradeant;  
+                            -webkit-text-fill-color:transparent;
+                            -webkit-background-clip: text;
+                          
+                        }
+                    }
+                }
+            }
+            .icons{
+                display: flex;
+                gap: 10px;
+                i{
+                    font-size: 20px; 
+                    color: $white;
+                    &:hover{
+                        @include gradeant;
+                        -webkit-background-clip:text;
+                        -webkit-text-fill-color:transparent; 
+                    }
+                }
+            }
+        }
+    }
+    .hero{
+        .title{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            h1{
+                color: $white;
+                font-size: 64px;
+                font-weight: 600;
+                line-height: 96px;
+                span{
+                    @include gradeant;
+                    -webkit-background-clip:text;
+                    -webkit-text-fill-color:transparent;   
+                }
+            }
+        }
+    }
+}

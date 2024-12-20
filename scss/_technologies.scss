@@ -1,0 +1,99 @@
+main{
+    padding: 50px 0;
+    .technologies{
+        .title{
+            h2{
+                color: $white;
+                font-size: 45px;
+                font-weight: 600;
+                line-height: 96px;
+                margin: 30px 0;
+            }
+        }
+        .info{
+            
+            h2{
+                font-size: 35px;
+                font-weight: 600;
+                line-height: 60px;
+                color: $white;
+                margin: 35px 0;
+            }
+            ul{
+                width: 75%;
+                margin: auto;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                list-style: circle;
+                li{
+                    color: $white;
+                    font-family: Poppins;
+                    font-size: 25px;
+                    font-weight: 600;
+                    line-height: 54px;
+                }
+            }
+        }
+        .boxs{
+            .box{
+                margin: auto;
+                width: 80%;
+                h3{
+                    color: $white;
+                    font-size: 36px;
+                    font-weight: 600;
+                    line-height: 54px;
+                }
+                .bx{
+                    width: 100%;
+                    border-radius: 83px;
+                    height: 30px;
+                    background-color: #162950;
+                    
+                    .bx-1{
+                        border-radius: 83px;
+                        width: 90%;
+                        height: 100%;
+                        @include gradeant;
+                    }
+                    .bx-2{
+                        border-radius: 83px;
+                        width: 75%;
+                        height: 100%;
+                        @include gradeant;
+                    }
+                    .bx-3{
+                        border-radius: 83px;
+                        width: 0;
+                        height: 100%;
+                        @include gradeant;
+                    }
+                    .bx-4{
+                        border-radius: 83px;
+                        width: 60%;
+                        height: 100%;
+                        @include gradeant;
+                    }
+                    .bx-5{
+                        border-radius: 83px;
+                        width: 0;
+                        height: 100%;
+                        @include gradeant;
+                    }
+                    .bx-6{
+                        border-radius: 83px;
+                        width: 0;
+                        height: 100%;
+                        @include gradeant;
+                    }
+                    .bx-7{
+                        border-radius: 83px;
+                        width: 0;
+                        height: 100%;
+                        @include gradeant;
+                    }
+                }
+            }
+        }
+    }
+}

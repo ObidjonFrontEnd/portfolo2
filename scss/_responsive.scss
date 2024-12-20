@@ -1,0 +1,150 @@
+@media screen and (max-width:900px) {
+    .container{
+        max-width: 870px;
+    }
+    section{
+        .projects{
+            .cards{
+                gap: 30px;
+            }
+        }
+    }
+    main{
+        .technologies{
+            .info{
+                ul{
+                    grid-template-columns: repeat(2 , 1fr);
+                }
+            }
+        }
+    }
+   
+}
+
+@media screen and (max-width:830px){
+    .container{
+        max-width: 720px;
+    }
+    section{
+        .projects{
+            .title{
+                margin: 20px 0;
+            }
+            .cards{
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .container{
+        max-width: 720px;
+    }
+    header{
+        .nav-bar{
+            nav{
+                .bi-list{
+                    display: block;
+                }
+                ul{
+                    display: none;
+                }
+                .icons{
+                    display: none;
+                }
+            }
+            
+        }
+        .hero{
+            .title{
+                h1{
+                    font-size: 45px;
+                    line-height: 50px;
+                }
+            }
+        }
+    }
+   
+    main{
+        .technologies{
+            .info{
+                width: 100%;
+                ul{
+                    grid-template-columns: repeat(1 , 1fr);
+                    justify-content: center;
+                    
+                }
+            }
+            .boxs{
+                .box{
+                    h3{
+                        font-size: 25px;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        .link{
+            align-items: center;
+        }
+    }
+}
+@media screen and (max-width:576px) {
+    .container{
+        max-width: 540px;
+    }
+    header{
+        .hero{
+            .title{
+                h1{
+                    font-size: 35px;
+                    line-height: 35px;
+                }
+            }
+        }
+    }
+    section{
+        .projects{
+           
+            .cards{
+                grid-template-columns: 1fr;
+                .card{
+                    max-width: 375px;
+                    padding: 20px 15px;
+                   .card-info{
+                       .bt{
+                        width: 100%;
+                        flex-direction: column;
+                        
+                        align-items: center;
+                       }
+                   }
+                }
+            }
+        }
+    }
+
+    main{
+        .technologies{
+            .boxs{
+                .box{
+                    h3{
+                        font-size: 20px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        .link{
+            h2{
+                font-size: 23px;
+            }
+        }
+    }
+}
